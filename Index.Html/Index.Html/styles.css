@@ -1,0 +1,14 @@
+body {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h1 {
+    color: darkred;
+    text-align: center;
+  }
+
+  .assign{
+    margin:10px;
+    padding:10px;
+    background-color: rgb(188, 50, 50);
+  }
