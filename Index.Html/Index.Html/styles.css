@@ -1,14 +1,42 @@
 body {
     background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
   }
   h1 {
-    color: darkred;
+    color: black;
     text-align: center;
+    width: 100%;
+  }
+
+  h1:hover {
+    color: black;
+    text-align: center;
+    width: 100%;
   }
 
   .assign{
     margin:10px;
-    padding:10px;
-    background-color: rgb(188, 50, 50);
+    padding: 10px;
+    background-color: red;
+    border-radius: 20px;
+    display: block;
+    width: 20%;
+    box-shadow: 8px 8px brown;
   }
+
+.assign img {
+width: 200px;
+margin: 10px;
+border: whitesmoke;
+}
+
+.assign img:hover {
+  width: 200px;
+  margin: 10px;
+  border: 2px dotted lightblue;
+}
+
+picture {
+  width: min-content;
+}
