@@ -1,0 +1,139 @@
+  /* Global Styles */
+  :root {
+    --primary-bg: #f4f4f4;
+    --secondary-bg: #ffffff;
+    --text-color: #333;
+    --accent-color: #000;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--accent-color);
+    color: var(--secondary-bg);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--secondary-bg);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero img {
+    width: 75%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/* Portfolio Preview */
+.portfolio-preview {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.portfolio-preview h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.services-table {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--accent-color);
+    color: var(--secondary-bg);
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
