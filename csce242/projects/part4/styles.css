@@ -1,0 +1,245 @@
+/* Global Styles */
+:root {
+    --primary-bg: whitesmoke;
+    --secondary-bg: whitesmoke;
+    --text-color: #333;
+    --accent-color: black;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--accent-color);
+    color: var(--secondary-bg);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--secondary-bg);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Toggle Menu */
+#toggle-nav {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#toggle-nav div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
+.gallery-item {
+    text-align: center;
+    cursor: pointer;
+}
+.gallery-item img {
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.services-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid var(--accent-color); /* Adds a border around the table */
+}
+
+.services-table th, 
+.services-table td {
+    border: 2px solid var(--accent-color); /* Adds a border to each cell */
+    padding: 10px;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--accent-color);
+        position: static;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    
+    #toggle-nav {
+        display: block;
+    }
+}
+
+.calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.calendar-month {
+    padding: 10px;
+    border: 2px solid var(--accent-color);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.calendar-month:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.view-times {
+    padding: 8px;
+    margin-top: 5px;
+    background-color: var(--secondary-bg);
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://picsum.photos/1400/900') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    border: 5px solid white;
+}
+
+.hero2 {
+    background: url('https://picsum.photos/1400/901') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    border: 5px solid white;
+}
+
+/* Sections */
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-section {
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.alt-section {
+    flex-direction: row-reverse;
+}
+
+/* Client Reviews */
+.client-review {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    background: var(--secondary-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.client-review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    background-color: var(--accent-color);
+    color: var(--secondary-bg);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 200px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
