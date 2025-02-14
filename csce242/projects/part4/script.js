@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     calendarHTML += "</div>";
 
+    //Interactive Calendar - Later Process
+    
     calendarDiv.innerHTML = calendarHTML;
 
     document.querySelectorAll(".view-times").forEach(button => {
