@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book A Session - Markael Sanders Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img id="main-logo" src="images/header.jpg">
+        <h1>Markael Sanders Photography</h1>
+        <nav>
+            <div id="toggle-nav" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="book.html">Book A Session</a></li>
+                <!--Get rid of shop-->
+                <!--Combined About and contact-->
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Book A Session</h2>
+            <p>Fill out the form below to schedule your session.</p>
+        </section>
+
+        <section class="form-section">
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="service">Select a Service:</label>
+                <select id="service" name="service">
+                    <option value="portrait">Portrait Photography</option>
+                    <option value="event">Event Photography</option>
+                    <option value="wedding">Wedding Photography</option>
+                    <option value="product">Product Photography</option>
+                    <option value="real_estate">Real Estate Photography</option>
+                    <option value="family">Family & Group Photos</option>
+                    <option value="maternity">Maternity & Newborn Photography</option>
+                    <option value="sports">Sports Photography</option>
+                </select>
+        
+                <label for="location">Preferred Location:</label>
+                <input type="text" id="location" name="location" required>
+        
+                <label for="date">Select Date & Time:</label>
+                <input type="datetime-local" id="date" name="date" required>
+
+                <section class="calendar-preview">
+                    <h3>Check Available Times</h3>
+                    <a href="available.html">
+                        <img src="months/feb.webp" alt="Click to View Availability" class="calendar-img">
+                    </a>
+                </section>
+                
+
+                
+
+        
+                <button type="submit">Submit</button>
+                <p>*A down payment of one hour of service will be charged before arrival</p>
+                <p>*Cancelation should be called in within 14 days of event</p>
+            </form>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <p>&copy; 2025 Markael Sanders Photography. All rights reserved.</p>
+    </footer>
+</body>
+</html>
