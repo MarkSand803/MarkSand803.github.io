@@ -195,7 +195,7 @@ button:hover {
   }
 
   #main-logo {
-    position:absolute;
+    position:flex;
     left:50px;
     width: 85px;
     height: 50px;
