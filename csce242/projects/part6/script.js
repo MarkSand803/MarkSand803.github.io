@@ -28,8 +28,7 @@ function displayGallery(items) {
             <img src="${item.img_name}" alt="${item.title}">
             <p><strong>${item.title}</strong></p>
             <p>${item.location}</p>
-            <p>${item.name}</p>
-            <p>${item.date}</p>
+            
         `;
 
         galleryGrid.appendChild(div);
