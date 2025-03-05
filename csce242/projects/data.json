@@ -68,12 +68,12 @@
       "location": "York, SC",
       "name": "Markael Prom Photos",
       "date": "2022-04-04",
-      "img_name": "images/p4prom.jpg",
+      "img_name": "images/p4prom.JPG",
       "details": ["Prom event", "Family ", "Candid shots"]
     },
     {
       "_id": 9,
-      "title": "Furnamn University",
+      "title": "Furman University",
       "location": "Greenville, SC",
       "name": "Furman University",
       "date": "2023-07-05",
