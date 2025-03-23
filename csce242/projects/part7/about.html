@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me - Markael Sanders Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js"></script>
+    <script defer src="contact.js"></script>
+</head>
+<body>
+    <header>
+        <img id="main-logo" src="images/header.jpg">
+        <h1>Markael Sanders Photography</h1>
+        <nav>
+            <div id="toggle-nav" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="book.html">Book A Session</a></li>
+                <!--Get rid of shop-->
+                <!--Combined About and contact-->
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>About Me</h2>
+            <p>Get to know the person behind the camera.</p>
+        </section>
+
+        <section class="section-container alt-section">
+            <div class="image-section small">
+                <h2>About Me</h2>
+                <p>I'm Markael Sanders, a photographer from York, South Carolina, with a passion for capturing life’s most meaningful moments. I provide professional photography services across the Carolinas and Georgia, specializing in portraits, weddings, real estate, and event photography. My goal is to blend creativity with technical precision, ensuring each image tells a story and reflects the true essence of the moment. Whether I’m shooting in the heart of a bustling city or the quiet beauty of a small town, I strive to create stunning, high-quality visuals that leave a lasting impact. Photography isn’t just my profession—it’s my way of preserving memories and bringing visions to life.</p>
+                
+            </div>
+            <div class="image-section small">
+                <img src="images/p4me.jpg" alt="About Me Image">
+            </div>
+        </section>
+
+        <h2>Contact Me</h2>
+
+        <section class="form-section">
+            <form method="POST" id="form">
+
+                <input type="hidden" name="access_key" value="4b8fd46f-ec1d-4b49-bd2e-546648271be3">
+
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="name">Question:</label>
+                <textarea name="message" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+                <button type="submit">Submit Form</button>
+            
+                <div id="result"></div>
+            
+            
+        </section>
+
+        <aside class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <p><strong>How do I book a session?</strong> Fill out the booking form on the "Book A Session" page.</p>
+            <p><strong>What types of photography do you offer?</strong> Portrait, event, and wedding photography.</p>
+        </aside>
+    </form>
+        <section class="hero2"></section>
+
+        <div class="sm-container">
+            <h2>Social Media</h2>
+            <a href="https://www.facebook.com/people/Markael-Sanders/pfbid02nudGAQMmbGwtogKZq2jPfmaCZgzT42jj6FuHQFQ9dwTwECXRjmzKpX5eNKjRmKTml/" class="fa fa-facebook"></a>
+            <a href="https://www.google.com/" class="fa fa-google"></a>
+            <a href="https://www.youtube.com/@marksand803" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/mark_sand803/" class="fa fa-instagram"></a>
+          </div>
+
+    </main>
+
+    <footer>
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <p>&copy; 2025 Markael Sanders Photography. All rights reserved.</p>
+    </footer>
+</body>
+</html>
