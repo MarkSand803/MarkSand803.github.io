@@ -1,0 +1,13 @@
+{
+  "name": "cola-city-buccaneers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official-style franchise website for the Cola City Buccaneers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
